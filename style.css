@@ -14,6 +14,14 @@ body {
     color: #e2e8f0;
 }
 
+.inicio {
+    background-image: url('images/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
 /* NAVBAR */
 .navbar {
     display: flex;
@@ -76,8 +84,18 @@ body {
  }
 /* HERO */
 .conteudo {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
     padding: 60px 8%;
+    flex-wrap: wrap;
+}
+
+.text-content {
+    text-align: left;
+    flex: 1;
+    max-width: 600px;
 }
 
 .titulo {
@@ -88,7 +106,7 @@ body {
 
 .conteudo p {
     max-width: 600px;
-    margin: 0 auto 30px;
+    margin: 0 0 30px;
     font-size: 18px;
     color: #94a3b8;
 }
@@ -96,14 +114,13 @@ body {
 .notebook-img {
     width: 100%;
     max-width: 500px;
-    margin: 30px auto;
-    display: block;
+    margin: 0;
 }
 
 /* BOTÕES HERO */
 .btn-conteudo {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center; 
     gap: 40px;
     flex-wrap: wrap;
